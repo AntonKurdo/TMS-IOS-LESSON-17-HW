@@ -13,6 +13,7 @@
 		046A39112B599A0D00577056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046A390F2B599A0D00577056 /* Main.storyboard */; };
 		046A39132B599A0F00577056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046A39122B599A0F00577056 /* Assets.xcassets */; };
 		046A39162B599A0F00577056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046A39142B599A0F00577056 /* LaunchScreen.storyboard */; };
+		4BBBDF0C46692FCB29AC64B1 /* Pods_TMS_IOS_LESSON_17_HW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CFC862D6A3E47C4B031DB40 /* Pods_TMS_IOS_LESSON_17_HW.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		046A39122B599A0F00577056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046A39152B599A0F00577056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046A39172B599A0F00577056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30ECF3877752169DBCCB30D7 /* Pods-TMS-IOS-LESSON-17-HW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMS-IOS-LESSON-17-HW.debug.xcconfig"; path = "Target Support Files/Pods-TMS-IOS-LESSON-17-HW/Pods-TMS-IOS-LESSON-17-HW.debug.xcconfig"; sourceTree = "<group>"; };
+		8CFC862D6A3E47C4B031DB40 /* Pods_TMS_IOS_LESSON_17_HW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMS_IOS_LESSON_17_HW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC8AA53E1EE857A0332395F1 /* Pods-TMS-IOS-LESSON-17-HW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMS-IOS-LESSON-17-HW.release.xcconfig"; path = "Target Support Files/Pods-TMS-IOS-LESSON-17-HW/Pods-TMS-IOS-LESSON-17-HW.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BBBDF0C46692FCB29AC64B1 /* Pods_TMS_IOS_LESSON_17_HW.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				046A39082B599A0D00577056 /* TMS-IOS-LESSON-17-HW */,
 				046A39072B599A0D00577056 /* Products */,
+				37DCEC113E521B3D938D476D /* Pods */,
+				AB28F5CA3D9D20A3F2E00089 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = "TMS-IOS-LESSON-17-HW";
 			sourceTree = "<group>";
 		};
+		37DCEC113E521B3D938D476D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30ECF3877752169DBCCB30D7 /* Pods-TMS-IOS-LESSON-17-HW.debug.xcconfig */,
+				FC8AA53E1EE857A0332395F1 /* Pods-TMS-IOS-LESSON-17-HW.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AB28F5CA3D9D20A3F2E00089 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CFC862D6A3E47C4B031DB40 /* Pods_TMS_IOS_LESSON_17_HW.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046A391A2B599A0F00577056 /* Build configuration list for PBXNativeTarget "TMS-IOS-LESSON-17-HW" */;
 			buildPhases = (
+				357104747ADE420A894E3C21 /* [CP] Check Pods Manifest.lock */,
 				046A39022B599A0D00577056 /* Sources */,
 				046A39032B599A0D00577056 /* Frameworks */,
 				046A39042B599A0D00577056 /* Resources */,
+				D01C7FAE4DCE3C2BD7443441 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		357104747ADE420A894E3C21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMS-IOS-LESSON-17-HW-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D01C7FAE4DCE3C2BD7443441 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TMS-IOS-LESSON-17-HW/Pods-TMS-IOS-LESSON-17-HW-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TMS-IOS-LESSON-17-HW/Pods-TMS-IOS-LESSON-17-HW-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TMS-IOS-LESSON-17-HW/Pods-TMS-IOS-LESSON-17-HW-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		046A39022B599A0D00577056 /* Sources */ = {
@@ -203,7 +271,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +334,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +355,7 @@
 		};
 		046A391B2B599A0F00577056 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30ECF3877752169DBCCB30D7 /* Pods-TMS-IOS-LESSON-17-HW.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +384,7 @@
 		};
 		046A391C2B599A0F00577056 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC8AA53E1EE857A0332395F1 /* Pods-TMS-IOS-LESSON-17-HW.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
